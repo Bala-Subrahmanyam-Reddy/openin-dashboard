@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .right-container {
     display: flex;
     flex-direction: row;

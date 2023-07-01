@@ -4,9 +4,18 @@ import { AiOutlineBell } from 'react-icons/ai';
 import userImage from '../../assests/user.jpg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useMenuHandle } from '../../context/menuHandle';
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
+import { BiLogIn } from 'react-icons/bi';
 
 const RightMenu = () => {
   const { menuOpen } = useMenuHandle();
+  const navigate = useNavigate();
+
+  const onClickLogout = () => {
+    Cookies.remove('jwt_token');
+    navigate('/login');
+  };
 
   return (
     <div>
@@ -50,12 +59,19 @@ const RightMenu = () => {
           <div className='text-lg lg:text-2xl'>
             <AiOutlineBell />
           </div>
-          <div>
+          <div className='dropdown inline-block relative'>
             <img
               src={userImage}
               className='w-5 lg:w-6 rounded-full bg-filedDarker'
               alt='user'
             />
+            <ul className='dropdown-menu hidden absolute  text-gray-700 pt-2 right-0'>
+              <li className='hover:bg-gray-300  ' onClick={onClickLogout}>
+                <button className='rounded-t flex items-center gap-1 bg-white py-2 text-black font-normal text-base px-5  whitespace-no-wrap'>
+                  <BiLogIn /> Logout
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
