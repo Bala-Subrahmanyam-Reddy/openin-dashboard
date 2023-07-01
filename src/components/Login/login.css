@@ -1,0 +1,7 @@
+ .login-container {
+     background-color: var(--background, #F5F5F5);
+ }
+
+ .login-right-container {
+     background-color: var(--background, #F5F5F5);
+ }
