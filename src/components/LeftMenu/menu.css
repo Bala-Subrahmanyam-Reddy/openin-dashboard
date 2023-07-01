@@ -97,10 +97,13 @@
     .menu {
         justify-content: flex-start;
         align-items: flex-start;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
     }
 
     .menu-link {
         display: block;
+        transition: all 0.25s;
     }
 
     .menu-logo {
@@ -110,6 +113,8 @@
     .menu-bottom {
         display: block;
         bottom: 4rem;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
     }
 
     .mobile-close-icon {

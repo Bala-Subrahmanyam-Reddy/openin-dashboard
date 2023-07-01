@@ -50,7 +50,7 @@ function BottomData() {
             Top products
           </h1>
           <div className='text-xs lg:text-sm text-primaryText flex justify-between items-center'>
-            <span className='mr-1'>May-June2023</span> <AiOutlineDown />
+            <span className='mr-1'>May - June2021</span> <AiOutlineDown />
           </div>
         </div>
         <div className='flex justify-around items-center mt-3'>

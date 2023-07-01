@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 18% auto;
     overflow: hidden;
+    gap: 3.785rem;
 }
 
 .dashboard-right-side {
@@ -18,6 +19,15 @@
     padding-top: 0.5rem;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.dashboard-container::-webkit-scrollbar {
+    width: 0.3em;
+    height: 100px;
+}
+
+.dashboard-container::-webkit-scrollbar-thumb {
+    background-color: #EAEAEA;
 }
 
 .dashboard-right-side::-webkit-scrollbar {

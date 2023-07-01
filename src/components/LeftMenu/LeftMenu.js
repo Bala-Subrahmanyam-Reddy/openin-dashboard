@@ -28,7 +28,7 @@ const LeftMenu = () => {
         menuELement.style.display = 'none';
       }
     }
-  }, [isMenuClicked,deviceWidth]);
+  }, [isMenuClicked, deviceWidth]);
 
   const MenuLogo = () => {
     return (
@@ -49,7 +49,9 @@ const LeftMenu = () => {
             }
             onClick={() => setItemSelected(index)}
           >
-            <div className='menu-icon text-base '>{item.iconImage}</div>
+            <div className='menu-icon '>
+              <img src={item.iconImage} alt='menuIconImage' />
+            </div>
             <span className='menu-link text-base'>{item.name}</span>
           </div>
         ))}

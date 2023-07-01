@@ -1,32 +1,33 @@
-import { VscDashboard } from 'react-icons/vsc';
-import { BsTags } from 'react-icons/bs';
-import { BsCalendar2Date } from 'react-icons/bs';
-import { FiUsers } from 'react-icons/fi';
-import { FiSettings } from 'react-icons/fi';
+import dashboardIcon from '../assests/dashboard_icon.svg';
+import transactionIcon from '../assests/transaction_icon.svg';
+import scheduleIcon from '../assests/schedule_icon.svg';
+import userIcon from '../assests/user_icon.svg';
+import settingsIcon from '../assests/setting_icon.svg';
+
 export const MenuItems = [
   {
     name: 'Dashboard',
-    iconImage: <VscDashboard />,
+    iconImage: dashboardIcon,
     link: '',
   },
   {
     name: 'Transactions',
-    iconImage: <BsTags />,
+    iconImage: transactionIcon,
     link: '',
   },
   {
     name: 'Schedules',
-    iconImage: <BsCalendar2Date />,
+    iconImage: scheduleIcon,
     link: '',
   },
   {
     name: 'Users',
-    iconImage: <FiUsers />,
+    iconImage: userIcon,
     link: '',
   },
   {
     name: 'Settings',
-    iconImage: <FiSettings />,
+    iconImage: settingsIcon,
     link: '',
   },
 ];

@@ -16,9 +16,9 @@ import { GoDotFill } from 'react-icons/go';
 const data = [
   {
     name: 'Week 1',
-    user: 1000,
-    guest: 2000,
-    amt: 400,
+    user: 6000,
+    guest: 4000,
+    amt: 0,
   },
   {
     name: 'Week 2',
@@ -49,7 +49,7 @@ function Activities() {
             Activities
           </h1>
           <div className='text-xs lg:text-sm text-primaryText flex justify-between items-center'>
-            <span className='mr-1'>May-June2023</span> <AiOutlineDown />
+            <span className='mr-1'>May - June2021</span> <AiOutlineDown />
           </div>
         </div>
         <div className='chat-right-side'>
@@ -67,13 +67,30 @@ function Activities() {
           </div>
         </div>
       </div>
-      <ResponsiveContainer width='100%' height={250}>
+      <ResponsiveContainer width='98%' height={250}>
         <LineChart height={300} data={data}>
           <CartesianGrid strokeDasharray='1' vertical={false} />
-          <XAxis dataKey='name' />
-          <YAxis />
-          <Tooltip />
-          <Legend />
+          <XAxis
+            tick={{ fill: '#858585' }}
+            scale='point'
+            dataKey='name'
+            tickLine={false}
+            padding={{ left: 30 }}
+            style={{
+              fontSize: '0.875rem',
+              fontFamily: 'Lato',
+            }}
+          />
+          <YAxis
+            tick={{ fill: '#858585' }}
+            axisLine={false}
+            dx={0}
+            tickLine={false}
+            style={{
+              fontSize: '0.875rem',
+              fontFamily: 'Lato',
+            }}
+          />
           <Line
             type='monotone'
             dataKey='guest'

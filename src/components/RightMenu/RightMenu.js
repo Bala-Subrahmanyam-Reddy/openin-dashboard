@@ -23,14 +23,14 @@ const RightMenu = () => {
               <input
                 type='search'
                 name='q'
-                className='py-1 lg:py-2 text-sm text-black bg-white rounded-md pl-2 pr-7 focus:outline-none '
+                className='py-1 text-sm text-black bg-white rounded-xl pl-2 pr-7 focus:outline-none '
                 placeholder='Search...'
                 autoComplete='off'
               />
               <span className='absolute inset-y-0 right-0 flex items-center pl-2'>
                 <button
                   type='submit'
-                  className='p-1 focus:outline-none focus:shadow-outline'
+                  className='pr-2 focus:outline-none focus:shadow-outline'
                 >
                   <svg
                     fill='none'
@@ -39,7 +39,7 @@ const RightMenu = () => {
                     strokeLinejoin='round'
                     strokeWidth='2'
                     viewBox='0 0 24 24'
-                    className='w-6 h-6'
+                    className='w-4 h-4'
                   >
                     <path d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
                   </svg>
@@ -64,14 +64,14 @@ const RightMenu = () => {
           <input
             type='search'
             name='q'
-            className='py-2  text-sm w-full text-black bg-white rounded-md pl-2 pr-7 focus:outline-none '
+            className='py-2  text-sm w-full text-black bg-white rounded-xl pl-2 pr-7 focus:outline-none '
             placeholder='Search...'
             autoComplete='off'
           />
           <span className='absolute inset-y-0 right-0 flex items-center pl-2'>
             <button
               type='submit'
-              className='p-1 focus:outline-none focus:shadow-outline'
+              className=' pr-2 focus:outline-none focus:shadow-outline'
             >
               <svg
                 fill='none'
@@ -80,7 +80,7 @@ const RightMenu = () => {
                 strokeLinejoin='round'
                 strokeWidth='2'
                 viewBox='0 0 24 24'
-                className='w-6 h-6'
+                className='w-4 h-4'
               >
                 <path d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
               </svg>
