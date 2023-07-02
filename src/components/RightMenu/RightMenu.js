@@ -65,7 +65,7 @@ const RightMenu = () => {
               className='w-5 lg:w-6 rounded-full bg-filedDarker'
               alt='user'
             />
-            <ul className='dropdown-menu hidden absolute  text-gray-700 pt-2 right-0'>
+            <ul className='dropdown-menu hidden z-20 absolute  text-gray-700 pt-2 right-0'>
               <li className='hover:bg-gray-300  ' onClick={onClickLogout}>
                 <button className='rounded-t flex items-center gap-1 bg-white py-2 text-black font-normal text-base px-5  whitespace-no-wrap'>
                   <BiLogIn /> Logout
